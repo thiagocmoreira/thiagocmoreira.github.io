@@ -17,6 +17,7 @@ body {
   font-size: 20px;
   padding-top: 0px;
   text-transform: uppercase;
+  color: #FFF;
 }
 
 .header-logo:visited {
@@ -44,4 +45,58 @@ body {
   font-size: 12px;
   line-height: 20px;
   padding: 10px 0;
+}
+
+/* Temporary Padding */
+
+.mid {
+  padding: 250px;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.footer-media {
+  background: #383838;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer-media ul li {
+  display: inline-block;
+  background: #FFF;
+  border-radius: 20px;
+  padding: 7px 10px;
+  margin: 0 2px;
+}
+
+.footer-media ul li a {
+  color: #383838;  
+}
+
+.footer-media ul li a:visited {
+  color: #383838;  
+}
+
+.footer-copy {
+  padding: 50px;
+  background: #000;
+  width: 100%;
+  color: #4B4B4B;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-copy a:visited {
+  color: #777777;
+}
+
+span .fa.fa-heart {
+  padding: 0 2px;
+  color: #B10A0A;
 }
