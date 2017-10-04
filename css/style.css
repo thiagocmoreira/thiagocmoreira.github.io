@@ -1,7 +1,47 @@
-.title {
-  padding-top: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
+body {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #212121;
+  padding: 15px 0 24px 0;
+}
+
+.header-logo {
+  padding-left: 12px;
+  font-size: 20px;
+  padding-top: 0px;
+  text-transform: uppercase;
+}
+
+.header-logo:visited {
+  color: #FFF;
+}
+
+.header-menu {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.header-menu ul {
+  margin-right: 24px;
+}
+ 
+.header-menu ul li {
+  display: inline-block;
+  margin-left: 20px; 
+}
+
+.header-menu ul li a {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 10px 0;
 }
