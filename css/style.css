@@ -10,6 +10,7 @@ body {
   width: 100%;
   background: #212121;
   padding: 15px 0 24px 0;
+  z-index: 10;
 }
 
 .header-logo {
@@ -47,10 +48,35 @@ body {
   padding: 10px 0;
 }
 
-/* Temporary Padding */
+/* Introduction */
 
-.mid {
-  padding: 250px;
+.introduction {
+  margin: 135px 0 65px 0;
+}
+
+.photo {
+  background: #000;
+  height: 400px;
+}
+
+.resume {
+  padding-left: 40px;  
+}
+
+.resume h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.resume p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.resume p:first-of-type {
+  margin-bottom: 30px;
 }
 
 /* Footer */
