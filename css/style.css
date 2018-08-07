@@ -1,154 +1,31 @@
 body {
   font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle, #3B3B3B, #3D3D3D);
 }
 
-/* Header */
-
-.header {
-  position: fixed;
-  top: 0;
+.presentation {
+  display: flex;
   width: 100%;
-  background: #212121;
-  padding: 15px 0 24px 0;
-  z-index: 10;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.header-logo {
-  padding-left: 12px;
-  font-size: 20px;
-  padding-top: 0px;
-  text-transform: uppercase;
-  color: #FFF;
-}
-
-.header-logo:visited {
-  color: #FFF;
-}
-
-.header-menu {
-  text-align: right;
-  margin-top: 10px;
-}
-
-.header-menu ul {
-  margin-right: 24px;
-}
- 
-.header-menu ul li {
-  display: inline-block;
-  margin-left: 20px; 
-}
-
-.header-menu ul li a {
-  color: #FFF;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  font-size: 12px;
-  line-height: 20px;
-  padding: 10px 0;
-}
-
-/* Introduction */
-
-.introduction {
-  margin: 135px 0 65px 0;
-}
-
-.photo {
-  background: #000;
-  height: 400px;
-}
-
-.resume {
-  padding-left: 40px;  
-}
-
-.resume h1 {
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
+.presentation h1 {
+  font-size: 42px;
+  color: white;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
-.resume p {
-  text-align: justify;
-  font-size: 18px;
+.presentation h2 {
+  font-size: 28px;
+  color: white;
+  padding-bottom: 5px;
 }
 
-.resume p:first-of-type {
-  margin-bottom: 30px;
-}
-
-/* Footer */
-
-.footer {
-  width: 100%;
-  margin-bottom: 0;
-}
-
-.footer-media {
-  background: #383838;
-  width: 100%;
-  padding: 30px;
-  text-align: center;
-}
-
-.footer-media ul li {
-  display: inline-block;
-  background: #FFF;
-  border-radius: 20px;
-  padding: 7px 10px;
-  margin: 0 2px;
-}
-
-.footer-media ul li a {
-  color: #383838;  
-}
-
-.footer-media ul li a:visited {
-  color: #383838;  
-}
-
-.footer-copy {
-  padding: 50px;
-  background: #000;
-  width: 100%;
-  color: #4B4B4B;
-  text-align: center;
-  font-size: 14px;
-}
-
-.footer-copy a:visited {
-  color: #777777;
-}
-
-span .fa.fa-heart {
-  padding: 0 2px;
-  color: #B10A0A;
-}
-
-/* Animate */
-.header a, .header nav, .introduction, .footer-media ul, .footer-copy span {
-  opacity: 0;
-}
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -20px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.fadeInDown {
-  animation-name: fadeInDown;
+.presentation h3 {
+  font-size: 20px;
+  color: white;
 }
