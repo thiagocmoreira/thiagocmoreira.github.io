@@ -1,6 +1,6 @@
 body {
   font-family: 'Nunito', Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle, #3B3B3B, #3D3D3D);
+  background: radial-gradient(circle, #FFF, #3D3D3D);
 }
 
 .presentation {
@@ -14,18 +14,18 @@ body {
 
 .presentation h1 {
   font-size: 42px;
-  color: white;
+  color: red;
   padding-bottom: 20px;
   font-weight: bold;
 }
 
 .presentation h2 {
   font-size: 28px;
-  color: white;
+  color: red;
   padding-bottom: 5px;
 }
 
 .presentation h3 {
   font-size: 20px;
-  color: white;
+  color: red;
 }
