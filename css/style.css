@@ -14,18 +14,18 @@ body {
 
 .presentation h1 {
   font-size: 42px;
-  color: white;
+  color: #3B3B3B;
   padding-bottom: 20px;
   font-weight: bold;
 }
 
 .presentation h2 {
   font-size: 28px;
-  color: white;
+  color: #3B3B3B;
   padding-bottom: 5px;
 }
 
 .presentation h3 {
   font-size: 20px;
-  color: white;
+  color: #3B3B3B;
 }
