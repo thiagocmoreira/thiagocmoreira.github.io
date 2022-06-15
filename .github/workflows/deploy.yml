@@ -11,7 +11,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,15 +19,25 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
+
+    - uses: actions/cache@v2
+      id: node-modules
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    # - run: npm ci
-    - run: npm run build
-    - run: npm run export
-    - run: touch ./out/.nojekyll
+        path: '**/node_modules'
+        key: node_modules-${{ hashFiles('./yarn.lock') }}
+        restore-keys: node_modules-
+
+    - name: Install Packages
+      run: yarn
+
+    - name: Build and export
+      run: |
+        yarn build
+        yarn export
+        touch ./out/.nojekyll
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
