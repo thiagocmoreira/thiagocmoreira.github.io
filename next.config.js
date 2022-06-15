@@ -6,7 +6,7 @@ const nextConfig = {
     path: ''
   },
   basePath: '/nextjs-pages',
-  assetsPrefix: '/nextjs-pages'
+  assetPrefix: '/nextjs-pages'
 }
 
 module.exports = nextConfig
